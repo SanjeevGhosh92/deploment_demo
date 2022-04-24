@@ -1,0 +1,55 @@
+.nav-wrapper {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    /* because the .intro margin-top: 6rem;
+    wasn't working */
+    margin-bottom: 8rem;
+    position: relative;
+    /* position: fixed ; */
+}
+
+.nav-left {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: 2rem;
+    justify-content: left;
+}
+
+.nav-right {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    font-weight: 400;
+    margin-right: 4rem;
+}
+
+.nav-list {
+    flex: 10;
+}
+
+.nav-list>ul{
+    display: flex;
+    gap: 2rem;
+    margin-right: 4rem;
+    cursor: pointer;
+}
+
+.nav-list>ul>li:hover {
+    cursor: pointer;
+    color : var(--orange);
+}
+
+.nav-btn {
+    flex: 2;
+}
+
+@media screen and (max-width: 480px) {
+    .nav-list{
+        display: none;
+    }
+    .nav-btn {
+         display: none;
+    }
+}
